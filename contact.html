@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group 13 | Contact Us</title>
+  
+  <!-- Link to the shared stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <strong>Group</strong><span> 13</span>
+      </a>
+      
+      <!-- Mobile navigation toggle button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+        &#9776; <!-- Hamburger Icon -->
+      </button>
+      
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== PAGE HEADER ==================== -->
+  <section class="hero" style="padding: 50px 0; background: #ffffff;">
+    <div class="container" style="text-align: center; max-width: 800px;">
+      <span class="course-badge">Introduction to Cloud Computing CSBC 252</span>
+      <h1 class="hero-title" style="font-size: 2.5rem; margin-bottom: 15px;">Contact Our Team</h1>
+      <p class="hero-desc" style="margin-bottom: 0;">
+        Have any questions about our university assignment, our implementation details, or the code structure? Drop us a message using the form below.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT FORM & INFO SECTION ==================== -->
+  <main class="section" style="background-color: var(--bg-color); border-top: 1px solid var(--border-color);">
+    <div class="container">
+      <div class="contact-container">
+        
+        <!-- Left Column: Contact info and description -->
+        <div class="contact-info">
+          <h3>Group 13</h3>
+          <p>
+            We are a group of five students collaborating on static website layouts, frontend systems, and responsive designs for our university coursework.
+          </p>
+          
+          <div class="info-item">
+            <span class="info-icon">&#9993;</span>
+            <div>
+              <strong>Email Us</strong>
+              <p style="margin: 0; font-size: 0.9rem;">2425402613@live.gctu.edu.gh</p>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <span class="info-icon">&#128205;</span>
+            <div>
+              <strong>Location</strong>
+              <p style="margin: 0; font-size: 0.9rem;">University Campus, Building 4B</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Form -->
+        <div>
+          <!-- Success feedback banner (initially hidden, shown via JS) -->
+          <div class="form-alert success" id="formSuccessAlert">
+            Thank you! Your message has been submitted successfully to the Group 13 team.
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <!-- Name field -->
+            <div class="form-group">
+              <label for="userName" class="form-label">Full Name</label>
+              <input type="text" id="userName" name="name" class="form-input" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email field -->
+            <div class="form-group">
+              <label for="userEmail" class="form-label">Email Address</label>
+              <input type="email" id="userEmail" name="email" class="form-input" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Message field -->
+            <div class="form-group">
+              <label for="userMessage" class="form-label">Message</label>
+              <textarea id="userMessage" name="message" class="form-input" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER SECTION ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Logo and project details -->
+        <div class="footer-logo">
+          <strong>Group</strong><span> 13</span>
+        </div>
+        
+        <!-- Quick navigation links -->
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Copyright text -->
+      <div class="footer-copy">
+        <p>&copy; 2026 Group 13. Group Assignment Project. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Link to the shared JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
